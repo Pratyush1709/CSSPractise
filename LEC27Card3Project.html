@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width:50%;
+            height: 60%;
+            display: flex;
+        }
+        .leftbox{
+            width: 50%;
+            background-color: purple;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .leftbox h1{
+            padding: 20px;
+            color: white;
+        }
+        #content{
+            padding: 20px;
+            color: white;
+        }
+        .items{
+            padding: 20px;
+            color: white;
+        }
+        .big{
+            font-weight: bold ;
+            font-size: xx-large;
+            display: flex;
+            gap: 20%;
+        }
+        .small{
+            display: flex;
+            gap: 20%;
+        }
+        .rightbox{
+            width: 50%;
+            background-color: blue;
+        }
+        .rightbox img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftbox">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam.</h1>
+                <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure suscipit possimus nam repellendus delectus fuga deleniti numquam nemo vel doloremque soluta excepturi, impedit animi culpa eaque eos saepe aliquam illo error quaerat, blanditiis quidem explicabo quos? Modi quidem quis earum, ad facere debitis, asperiores neque voluptate delectus, minima omnis!</p>
+                <div class="items">
+                    <div class="big">
+                        <p>10K+</p>
+                        <p>214</p>
+                        <p>12M+</p>
+                    </div>
+                    <div class="small">
+                        <p>Comments</p>
+                        <p>Paid Users</p>
+                        <p>Views</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightbox">
+                <img src="startup1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

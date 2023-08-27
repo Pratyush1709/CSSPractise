@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Project</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            overflow-x: none ;
+            background: rgb(247,247,255);
+            background: linear-gradient(0deg, rgba(247,247,255,1) 11%, rgba(231,131,131,1) 100%);
+            
+        }
+        .navContainer{
+            width: 100vw;
+            /* background-color: aqua; */
+
+            background-color: #092148;
+            background-image: linear-gradient(160deg, #092148 0%, #ffffff 98%);
+
+            /* gradient CSS colour brought from Internet */
+
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        nav{
+            width: 100%;
+            overflow-x: none;
+            padding-right: 2rem;
+        }
+        #navList{
+            width: 100%;
+            padding: 15px;
+            /* margin-left: 15px;
+            margin-right: 15px; */
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #navLogo{
+            font-size: 2.8rem;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #navItems{
+            display: flex;
+            gap: 40px;
+        }
+        .footerBox{
+            background-color: #092148;
+            background-image: linear-gradient(160deg, #092148 0%, #ffffff 98%);
+
+            color: azure;
+            width: 100%;
+            text-align: center;
+            min-height: 40px;
+        }
+        .footerBox p{
+            color: azure;
+            font-size: 2rem;
+        }
+        .contentBox{
+            width: 50%;
+            margin: auto;
+            /* border: 1px solid
+            black; */
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 3rem;
+            box-shadow: 0px 0px 30px black;
+        }
+        .item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .rightBox{
+            position: relative;
+            overflow: hidden;
+            transition:all 0.3s linear 0s ;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 20px;
+        }
+        .rightBox img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            transition: all 0.6s linear 0s;
+        }
+        .rightBox:hover{
+            transform: scale(1.1);
+        }
+        .leftBox{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .leftBox h2{
+            font-size: 2rem;
+        }
+        .ingBox{
+            font-size: 1.3rem;
+        }
+        .recipeBox{
+            font-size: 1.1rem;
+        }
+        .rightBox .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(118, 110, 110);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s linear 0s;
+        }
+        .rightBox:hover .overlay{
+            opacity: 1;
+        }
+        .rightBox .overlay span{
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="navList">
+                        <li>
+                            <p id="navLogo">Recipe</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contentBox">
+                <!-- item1 -->
+                <section>
+                    <div class="item">
+                        <div class="leftBox">
+                            <!-- heading -->
+                            <h2>Gulab Jamun</h2>
+                            <div>
+                                <h2>Ingredients</h2>
+                            <ul class="ingBox">
+                                <li>Sugar</li>
+                                <li>Bread</li>
+                                <li>Oil</li>
+                            </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                            <ol class="recipeBox">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, asperiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            <img src="gulab-jamun.jpg" alt="">
+                            <div class="overlay">
+                                <span>click here to buy</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="item">
+                        <div class="leftBox">
+                            <!-- heading -->
+                            <h2>Barfi</h2>
+                            <div>
+                                <h2>Ingredients</h2>
+                            <ul>
+                                <li>Sugar</li>
+                                <li>Bread</li>
+                                <li>Oil</li>
+                            </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, asperiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                            </ol>
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            <img src="Barfi.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footerBox">
+                <p> Copyright: &copy; Pratyush da Dhaaba Pvt Ltd 2023 All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

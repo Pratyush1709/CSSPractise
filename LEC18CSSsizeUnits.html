@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS size units
+        
+        px
+        %
+        vw 
+        vh
+        rem
+        em  */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            border: 1px solid black;
+            background-color: beige;
+            width: 50%;
+        }
+        .child{
+            border: 1px solid green;
+            background-color: rgb(88, 222, 222);
+            width: 20%;
+        }
+        .container{
+            border: 1px solid forestgreen;
+            background-color: beige;
+            height: 100vh;
+            width: 50vw;
+            /* to understand vh and vw */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+                child
+                <!-- to understand the %, which depends upon immediate parent -->
+        </div>   
+    </div>
+    <div class="container">
+        This is Pratyush Das
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            height: 1000px;
+
+            display: flex;
+            /* the container becomes the flex box and by default its direction is ROW*/
+             
+            flex-direction: column;
+            /* by chossing the FLEX DIRECTION : COLUMN, the default value of flex i.e. ROW is changed */
+            flex-direction: row-reverse;
+            /* in ROW, but in reverse */
+            flex-direction: row;
+
+            flex-wrap: wrap;
+            /*Whenever the width of the screen is getting small due to any resason such as in diff devices, then the box get into the next line and not squeez keeping the height and width same until the space is available. */
+
+            /* flex-wrap: nowrap/wrap/wrap-reverse; */
+
+            flex-flow: row wrap;
+            /* both direction and wrapping in a single line */
+            
+            /* justify-content: center; */
+            
+            /* Items placed in center according to the main axis.
+            For ROW, the main axis is horizintal 
+            For COLUMN, the main axis is vertical*/
+
+            /* justify-content: center/start/end; */
+            /* justify-content: space-around/evenly/between; */
+
+            align-items: center; 
+            /* acts along cross axis */
+            /* align-content: center; */
+        }
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+            /* order: 500; */
+            /* controls the order of the flex items by assigning any Interger */
+
+            /* flex-shrink: 4; */
+
+            /* align-self: end; */
+            /* items align itself along cross axis  */
+        }
+        #box2{
+            background-color: red;
+            
+            /* flex-grow: 2; */
+        }
+        #box3{
+            background-color: green;
+            /* order: -1; */
+        }
+        #box4{
+            background-color: blueviolet;
+
+            /* flex-basis: 400px; */
+            /* used to set the dimensions of the flex items */
+        }
+    </style>  
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 4</div>
+    </div>
+</body>
+</html>

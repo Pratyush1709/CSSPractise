@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-colour: brown;
+            --custom-width:330px;
+            /* VARIABLES can be made */
+        }
+
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: var(--primary-colour);
+            width: var(--custom-width) ;
+            /* using VARIABLE */
+
+            height: 330px;
+            border: 1px solid aqua;
+            margin: 5px;
+            padding: 5px;
+
+            /* box-shadow: 10px 15px brown; */
+            /* Shadow effects using Xoffset Yoffset and colour */
+            
+            /* box-shadow: 10px 15px 5px yellow ; */
+            /* Shadow effects using Xoffset Yoffset blur and colour */
+
+            /* box-shadow: 10px 15px 5px 20px brown; */
+            /* Shadow effects using Xoffset Yoffset blur SpreadRadius and colour */
+
+            /* box-shadow: inset 10px 15px 5px yellow ; */
+            /* shadow in inside */
+
+            /* box-shadow: 10px 10px red, 15px 15px green; */
+            /* to add multiple shadows using comma(,) */
+        }   
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        #head1{
+            text-shadow: 2px 3px 5px yellow ;
+             /* Text Shadow effects using Xoffset Yoffset blur and colour */
+
+            /* There are different syntax for choosing the parameters such as x offset, yoffset, blur and colour; if requires check it on MDN */
+        }
+        #head3{
+            text-shadow: 10px 10px green, 15px 15px orange;
+            /* to add multiple text shadows using comma(,) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="LinkedIn.png" alt="">
+            <h2 id="head1">My name is Pratyush</h2>
+            <h3 id="head3">This is Practise time</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt aperiam, amet doloribus corporis autem, ipsa minima voluptatum obcaecati ut consequuntur tenetur maiores, veritatis commodi vel iure quas. Voluptatum quam, dolor, neque cumque quo maiores nostrum ullam doloremque animi itaque voluptatem magni sequi dignissimos adipisci? Eveniet officia explicabo sapiente earum non?</p>
+        </div>
+    </div>
+</body>
+</html>

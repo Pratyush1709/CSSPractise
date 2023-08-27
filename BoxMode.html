@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            /* *{}- is a universal selector applies to all elements */
+            box-sizing: border-box;
+            /* It defines how the width and height of an element are calculated: should 
+            they include padding and borders, or not. Box sizing:border-box is the best
+            practise beacuse the width and height user set,the same net width and heigh he got.
+            Unlike box sizing:content-box where the overall width and height changes of 
+            the box by doing padding and margin */
+            
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        h1{
+            background-color: aquamarine;
+
+            border-style: solid;
+            border-width: 2px;
+            border-color: brown;
+            /* The above border statements used to style for the borders */
+
+            border-radius: 50px;
+            /* radius: is used to curve the border edge */
+            
+        }
+        span{
+            background-color: green;
+            border: solid orange 2px;
+            border-radius: 10px;
+
+            width: 1000px;
+            height: 500px;
+            /* width and height in snot affected in span tag. It is because the <span> 
+            element is an inline element. An inline element does not start on a 
+            new line and only takes up as much space as required. */
+        }
+        .para1{
+            background-color: blueviolet;
+            
+            border: solid blue 2px;
+            /* to style the border we can directly use in this way also */
+            border-top-left-radius: 10px;
+            /* used to round off only the one edge i.e. top left edge */
+
+            padding: 50px;
+            /* by padding: space between border and content */
+            /* padding- inside the border */
+            margin: 90px;
+            /* by margin: space around elements, outide any defined border is changes */
+            /* margin- outside the border */
+            width: 200px;
+            height: 100px;
+            /* used to modify the width and height in the UI(User Interface) */
+        }
+        .para2{
+            background-color: aqua;
+            border-top: dashed yellow 3px;
+            /* used to generate border only at the top */
+            padding-left: 30px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            padding-right: 100px;
+        }
+        .para3{
+            background-color: yellow;
+            padding: 20px 10px 40px 10px;
+            /* Padding by direct */
+
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-bottom: 50px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, facere molestias sint quasi modi nihil est aut odit.</p>
+    <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dignissimos.</p>
+    <span>This is Pratyush</span>
+    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ducimus incidunt cum voluptatem laudantium adipisci!</p>
+</body>
+</html>

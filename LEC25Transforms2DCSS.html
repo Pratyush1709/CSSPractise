@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: auto; */
+            transition: all 3s linear 1s;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: rotate(-45deg); */
+
+            /* transform: scale(2); */
+
+            /* transform: skew(45deg); */
+            /* transform: skew(-45deg); */
+
+            /* transform: translate(500px); */
+            /* transform: translate(0px,500px); */
+            /* transform: translate(500px, 500px); */
+
+            /* transform: matrix(0.4, 0, 0, 1.2, 60, 10); */
+            /* The values represent the following functions: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+            
+            Learn from MDN or w3school*/
+        }
+        p{
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>This is Pratyush</p>
+        </div>
+    </div>
+</body>
+</html>

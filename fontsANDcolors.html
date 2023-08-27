@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<!-- external font link copied from google fonts -->
+
+    <style>
+        p{
+            font-style: italic;
+            /*Changes the font style to italic */
+            font-size: 20px;
+            /* Changes the font size */
+            /* px-> pixel, is the unit which equals to 1/96 inch(0.26mm)  */
+
+            /* font-family: cursive; */
+            /* font-family used to showcase the look of text i.e. how the texts will be look; internally available*/
+            font-family: 'Dancing Script', cursive;
+            /* External font family copied from google fonts, we have to first copied the external link in head and then should copied font-family */
+
+            font-weight: 100;
+            /* font-weight: used to decide the degree of blackness/thickness of the text */
+            line-height: 50px;
+            /* line-height= used to decide the gap between two lines */
+
+        }
+        #para1{
+            background-color: yellow;
+            color: purple;
+            /*color using background color*/
+        }
+        #para2{
+            background-color: rgb(46, 96, 255);
+            /* color using rgb i.e red, green, blue and the highest value will be 255*/
+        }
+        #para3{
+            background-color: rgba(50, 50, 50, 0.5);
+            /* rgba satnds for red, green,blue alpha where alpha gives the transparency and vary from 0 to 1*/
+        }
+        .firstclass{
+            background-color: #bc4ba577;
+            /* color using hexadecimal, starts with hashtag where first two digits denotes red, 
+            second two digits denotes green last second two digits denotes blue and last two digits behaves 
+            like alpha i.e. for transparency   */
+        }
+        #para4{
+              background-color: hsla(9, 57%, 41%, 0.612);  
+            /* 0 for red, 120 for greem and 240 for blue */
+            /* hsl stands for hue saturation and lightness 
+            hue means r,g,b components and saturation lightness means for darkness and lightness */
+        }
+        /* Learn all if forget from internet sources like mdn or w3schools or anywhere */
+        #para5{
+            background-color: hsla(60, 95%, 47%, 0.864);
+            /* hsla where a stands for alpha */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Web Dev</h1>
+
+    <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, veniam nisi. Maxime, maiores! Perspiciatis reprehenderit, unde facilis dolorum aspernatur optio?</p>
+    
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, magni!</p>
+
+    <p id="para3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laborum eum quos quibusdam nemo iste sapiente dolor sint voluptas, suscipit et harum debitis dicta, maxime enim nobis odit reiciendis tenetur repellendus. Officia debitis provident vitae tenetur, alias laboriosam, sunt adipisci architecto perspiciatis assumenda doloremque porro! Sapiente, nobis tenetur quibusdam repudiandae ex iste nulla quam sit quas explicabo tempora! Cum, earum. Enim veniam culpa aliquid ad distinctio maiores? Obcaecati, dolorem necessitatibus placeat non excepturi, quae laudantium, quia corporis tempore pariatur corrupti quaerat. Quidem neque alias explicabo cumque expedita! Excepturi hic quia ipsa, rem, modi commodi, sequi adipisci repellendus culpa aut debitis!</p>
+
+    <p class="firstclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quod.</p>
+    
+    <p id="para4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod delectus incidunt sequi dolore adipisci debitis rem inventore accusamus labore? Magni eveniet, veniam fugit nisi iste consectetur accusamus? Aliquid molestiae amet, aperiam asperiores cumque dicta ea explicabo quod doloribus optio vel, ratione quia nisi tempora distinctio nemo adipisci odit laudantium excepturi repellendus. Sequi officiis eveniet eum cumque perspiciatis, dolore perferendis magnam vero praesentium quos corporis hic aliquam quisquam reprehenderit nulla velit, itaque expedita numquam totam consectetur atque fugiat quae provident? Consectetur hic deserunt dolorum, officia neque distinctio doloremque ad laborum laboriosam magnam ratione at adipisci eos totam cum tenetur consequatur modi!</p>
+
+    <p id="para5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, expedita?</p>
+</body>
+</html>
